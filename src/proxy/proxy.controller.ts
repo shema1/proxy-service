@@ -17,5 +17,6 @@ export class ProxyController {
   @All()
   get(@Req() req, @Res() res, @Next() next) {
     proxy(req, res, next);
+    // res.send('Hello World');
   }
 }
